@@ -1,0 +1,114 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-section {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.hero-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+    object-fit: contain;
+}
+
+.start-chat-btn {
+    background: linear-gradient(135deg, #003366 0%, #00509e 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 1.5rem;
+}
+
+.start-chat-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 80, 158, 0.2);
+}
+
+.features-section {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 2rem 1rem;
+}
+
+.features-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card h3 {
+    color: #00509e;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
